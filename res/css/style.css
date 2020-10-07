@@ -24,7 +24,7 @@ a {
 header span {
 	margin: 0;
 	font-size: 1.75em;
-	line-height: 3.5em;
+	line-height: 100px;
 }
 
 .scroll-indicator {
