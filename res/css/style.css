@@ -27,6 +27,10 @@ header span {
 	line-height: 100px;
 }
 
+header .search-box {
+	display: none;
+}
+
 .scroll-indicator {
 	position: fixed;
 	z-index: 1000;
