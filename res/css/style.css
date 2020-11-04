@@ -21,10 +21,17 @@ a {
 	font-size: 16px !important;
 }
 
-header span {
-	margin: 0;
-	font-size: 1.75em;
-	line-height: 100px;
+.far,
+.fas,
+.fab {
+  margin-right: 5px;
+}
+
+header .home a {
+  margin: 0;
+  font-size: 1.75em;
+  line-height: 100px;
+  color: #424242;
 }
 
 header .search-box {
