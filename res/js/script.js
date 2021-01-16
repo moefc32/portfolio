@@ -1,22 +1,18 @@
-window.onscroll = function () {
-  scrollIndicator()
-};
-
-function scrollIndicator() {
+window.onscroll = () => {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   let scrolled = (winScroll / height) * 100;
   document.getElementById("bar").style.width = scrolled + "%";
-}
+};
 
 const apiKey = 'EEFc6yBDOHDISwhWKGmulhPCb7ETWkav';
 const user = 'moefc32';
 
-$(function () {
+$(() => {
   $.ajax({
     url: "https://api.behance.net/v2/users/" + user + "/projects?api_key=" + apiKey,
     dataType: 'jsonp',
-    success: function (results) {
+    success: (results) => {
       let projectsArray = new Array();
       for (let i = 0; i < results.projects.length; i++) {
         let project = results.projects[i];
